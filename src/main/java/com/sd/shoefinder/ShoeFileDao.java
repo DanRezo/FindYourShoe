@@ -53,7 +53,7 @@ public class ShoeFileDao implements ShoeDAO {
 		return s;
 	}
 
-@Override
+	@Override
 	public Shoe getShoesByName(String name) {
 		Shoe s = null;
 		for (Shoe shoen : shoes) {
@@ -86,6 +86,26 @@ public class ShoeFileDao implements ShoeDAO {
 			}
 		}
 		return shoeByType;
+	}
+
+	@Override
+	public void addNewShoe(Shoe shoe) {
+		shoes.add(shoe);
+	}
+
+	@Override
+	public void deleteShoe(Shoe shoe) {
+
+	}
+
+	@Override
+	public void removeBrand(Shoe brand) {
+		for (Shoe shoe : shoes) {
+			if (shoe.getBrand().equals(brand)) {
+				shoes.removeAll(shoes);
+			}
+		}
+
 	}
 
 	@Override

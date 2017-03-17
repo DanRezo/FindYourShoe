@@ -66,11 +66,20 @@ public class ShoeFinderController {
 	@RequestMapping( path = "NewShoe.do",
 					 method = RequestMethod.POST)
 	public ModelAndView newShoe(Shoe shoe){
+		shoeDAO.addNewShoe(shoe);
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("result");
 		
 		return mv;
 		
+	}
+	@RequestMapping( path = "DeleteShoe.do",
+					method = RequestMethod.POST)
+	public ModelAndView deleteShoe(Shoe shoe){
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("result");
+		
+		return mv;
 	}
 	
 

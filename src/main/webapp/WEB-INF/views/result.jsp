@@ -9,6 +9,7 @@
 <title>Find Your Fit</title>
 </head>
 <body>
+
 	<c:choose>
 		<c:when test="${! empty shoe}">
 			<ul>

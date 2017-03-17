@@ -7,8 +7,8 @@ public interface ShoeDAO {
 	public Shoe getShoesByName(String name);
 	public List<Shoe> getShoesByRun(String run);
 	public List<Shoe> getShoesByType(String type);
-	
-	
+	public void addNewShoe(Shoe shoe);
+	public List<Shoe> removeBrand(Shoe brand);
 	
 	
 	
