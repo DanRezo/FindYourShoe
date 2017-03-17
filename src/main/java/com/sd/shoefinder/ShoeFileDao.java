@@ -28,7 +28,7 @@ public class ShoeFileDao implements ShoeDAO {
 			String line;
 			while ((line = buf.readLine()) != null) {
 				String[] tokens = line.split("/ ");
-				String brand = tokens[0];
+				String brand = tokens[1];
 				String name = tokens[2];
 				String type = tokens[3];
 				String run = tokens[4];
@@ -41,12 +41,12 @@ public class ShoeFileDao implements ShoeDAO {
 	}
 
 	@Override
-	public Shoe getShoesByBrand(String brand) {
-		Shoe s = null;
+	public List<Shoe> getShoesByBrand(String brand) {
+		List<Shoe> s = new ArrayList<>();
 		for (Shoe shoeb : shoes) {
+			System.out.println(shoeb.getName());
 			if (shoeb.getBrand().equals(brand)) {
-				s = shoeb;
-				break;
+				s.add(shoeb);
 			}
 
 		}
@@ -115,6 +115,15 @@ public class ShoeFileDao implements ShoeDAO {
 
 			}
 			shoes.remove(index);
+		}
+	}
+	
+	@Override
+	public List<Shoe> editShoe(){
+	int index = 0;
+	for(Shoe shoeEdit: shoes){
+		if(shoeEdit.getName().equals(name)){
+			shoeEdit.setBrand()
 		}
 	}
 

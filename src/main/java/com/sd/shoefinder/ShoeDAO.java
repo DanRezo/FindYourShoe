@@ -3,7 +3,7 @@ package com.sd.shoefinder;
 import java.util.List;
 
 public interface ShoeDAO {
-	public Shoe getShoesByBrand(String brand);
+	public List<Shoe> getShoesByBrand(String brand);
 
 	public Shoe getShoesByName(String name);
 
@@ -13,9 +13,10 @@ public interface ShoeDAO {
 
 	public void addNewShoe(Shoe shoe);
 
+	public void deleteShoe(String name);
+
 	public void removeBrand(Shoe brand);
 
-	public void deleteShoe(String name);
 
 	public List<Shoe> getAllShoes();
 

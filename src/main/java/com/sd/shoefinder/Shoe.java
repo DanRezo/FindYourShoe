@@ -8,6 +8,7 @@ public class Shoe {
 	private String picture;
 	private String name;
 
+	public Shoe(){}
 
 
 	public Shoe(String brand, String name, String type, String run, String picture) {
