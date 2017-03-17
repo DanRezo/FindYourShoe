@@ -75,8 +75,9 @@ public class ShoeFinderController {
 	}
 	@RequestMapping( path = "DeleteShoe.do",
 					method = RequestMethod.POST)
-	public ModelAndView deleteShoe(Shoe shoe){
+	public ModelAndView deleteShoe(@RequestParam("name") String name){
 		ModelAndView mv = new ModelAndView();
+		shoeDAO.deleteShoe(name);
 		mv.setViewName("result");
 		
 		return mv;

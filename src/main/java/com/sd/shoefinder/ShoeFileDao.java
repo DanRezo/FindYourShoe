@@ -94,18 +94,28 @@ public class ShoeFileDao implements ShoeDAO {
 	}
 
 	@Override
-	public void deleteShoe(Shoe shoe) {
-
+	public void deleteShoe(String name) {
+		int index = 0;
+		for (Shoe shoe2 : shoes) {
+			if (shoe2.getName().equals(name)) {
+				index = shoes.indexOf(shoe2);
+				break;
+			}
+		}
+		shoes.remove(index);
 	}
 
 	@Override
 	public void removeBrand(Shoe brand) {
-		for (Shoe shoe : shoes) {
-			if (shoe.getBrand().equals(brand)) {
-				shoes.removeAll(shoes);
-			}
-		}
+		int index = 0;
+		for (Shoe shoeBrand : shoes) {
+			if (shoeBrand.getBrand().equals(brand)) {
+				index = shoes.indexOf(shoeBrand);
+				break;
 
+			}
+			shoes.remove(index);
+		}
 	}
 
 	@Override
