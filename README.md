@@ -2,7 +2,7 @@
 A Java web-app developed on eclipse using the Spring Tool Suite which allows users to utilize CRUD operations on a shoe list.
 
 <p align="center"><img src="src/main/webapp/ShoePics/Screen1.png" height="350">
-  <img src="src/main/webapp/ShoePics/Screen2.png" height="350"></p>
+<img src="src/main/webapp/ShoePics/Screen2.png" height="350"></p>
 ## In This Document
 1. [How to Execute](#how-to-execute)
 ## How to Execute
@@ -21,7 +21,7 @@ A Java web-app developed on eclipse using the Spring Tool Suite which allows use
    -Removing shoes form list.
    -Editing a shoe on the list.
    -Adding a new shoe to the list.
-  6. User can also click on the drop down menu to filter shoes by
+6. User can also click on the drop down menu to filter shoes by
     1.Category
       -Neutral
       -Stability
