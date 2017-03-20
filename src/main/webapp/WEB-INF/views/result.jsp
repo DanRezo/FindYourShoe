@@ -8,6 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Find Your Fit</title>
 <link rel="stylesheet" href="resultStyle.css">
+
 </head>
 <body>
 	<div id="Top">
@@ -36,6 +37,31 @@
 			<li class="single"><a
 				href=http://www.brooksrunning.com/en_us/ShoeFinder>Find Your
 					Running Style</a>
+			<li><table id="logos">
+					<tr>
+						<td id="logo" style="padding: 0; padding-left: 25%;" id="Asics"><a
+							href="GetShoeData.do?brand=Asics"> <img
+								src="ShoePics/Asics.png" alt="OnisukaTiger" width="70px"
+								height="100px"></a></td>
+						<td id="logo" style="padding: 0; padding-left: 25%;" id="Brooks"><a
+							href="GetShoeData.do?brand=Brooks"> <img
+								src="ShoePics/Brooks.png" alt="RunHappy" width="70px"
+								height="75px"></a></td>
+						<td id="logo" style="padding: 0; padding-left: 25%;" id="NB"><a
+							href="GetShoeData.do?brand=New Balance"> <img
+								src="ShoePics/NBLogo.png" alt="AlwaysInBeta" width="70px"
+								height="75px">
+						</a></td>
+						<td id="logo" style="padding: 0; padding-left: 25%;" id="Nike"><a
+							href="GetShoeData.do?brand=Nike"> <img id="Swoosh"
+								src="ShoePics/Nike.png" alt="Swoosh" width="110px" height="75px"
+								align="top"></a></td>
+						<td id="logo" style="padding: 0; padding-left: 20%;" id="Saucony"><a
+							href="GetShoeData.do?brand=Saucony"><img
+								src="ShoePics/Saucony.png" alt="FindYourStrong" width="130px"
+								height="75px"></a></td>
+					</tr>
+				</table></li>
 		</ul>
 	</div>
 
@@ -63,12 +89,12 @@
 							<td id="shoe"><img src="ShoePics/${shoe.picture}"
 								width="250px" height="150px"></td>
 							<td>
-								<form action="DeleteShoe.do" method="POST">
+								<form id="button" action="DeleteShoe.do" method="POST">
 									<button type="submit" name="name" value="${shoe.name }">Remove
 										Shoe</button>
 								</form>
 							</td>
-							<td><form action="EditShoeForm.do" method="POST">
+							<td><form id="button" action="EditShoeForm.do" method="POST">
 									<button type="submit" name="name" value="${shoe.name }">Edit
 										Shoe</button>
 								</form></td>
@@ -79,34 +105,5 @@
 			</c:choose>
 		</table>
 	</div>
-
-	<div>
-		<table class="logos" style="padding: 0; padding-left: 5%;">
-			<tr>
-				<td style="padding: 0; padding-left: 5%;" id="Asics"><a
-					href="GetShoeData.do?brand=Asics"> <img
-						src="ShoePics/Asics.png" alt="OnisukaTiger" width="100px"
-						height="160px"></a></td>
-				<td style="padding: 0; padding-left: 5%;" id="Brooks"><a
-					href="GetShoeData.do?brand=Brooks"> <img
-						src="ShoePics/Brooks.png" alt="RunHappy" width="100px"
-						height="160px"></a></td>
-				<td style="padding: 0; padding-left: 5%;" id="NB"><a
-					href="GetShoeData.do?brand=New Balance"> <img
-						src="ShoePics/NBLogo.png" alt="AlwaysInBeta" width="100px"
-						height="160px">
-				</a></td>
-				<td style="padding: 0; padding-left: 5%;" id="Nike"><a
-					href="GetShoeData.do?brand=Nike"> <img id="Swoosh"
-						src="ShoePics/Nike.png" alt="Swoosh" width="100px" height="160px"
-						align="top"></a></td>
-				<td style="padding: 0; padding-left: 5%;" id="Saucony"><a
-					href="GetShoeData.do?brand=Saucony"><img
-						src="ShoePics/Saucony.png" alt="FindYourStrong" width="100px"
-						height="160px"></a></td>
-			</tr>
-		</table>
-	</div>
-
 </body>
 </html>

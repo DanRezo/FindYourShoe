@@ -7,7 +7,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Add Shoe</title>
-<link rel="stylesheet" href="resultStyle.css">
+<link rel="stylesheet" href="addStyle.css">
 </head>
 <body>
 	<div id="Top">
@@ -66,7 +66,7 @@
 			<option name="run" value="Run Stable">Run Stable</option>
 			<option name="run" value="Run True">Run True</option>
 		</select> -->
-		<input type="submit" value="Submit" />
+		<input id="button"type="submit"value="Submit"/>
 	</form>
 	
 </body>

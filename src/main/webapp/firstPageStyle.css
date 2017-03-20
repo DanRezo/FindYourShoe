@@ -1,7 +1,6 @@
-
-table.center{
-margin-left: auto;
-margin-right: auto;
+.center {
+margin-left: 15%;
+width: 60%;
 }
 
 #Asics {
@@ -20,7 +19,34 @@ border-collapse:collapse;
 border-collapse: collapse;
 }
 #logos{
-margin-left: auto;
-margin-right: auto;
 width: 100%
+}
+h1{
+  font-family: 'Share Tech Mono', monospace;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+  height:75%;
+  width:75%;
+}
+
+#button:hover{
+	
+	background-color:lightgrey;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.words{
+	text-align:left;
+	width: 30%;
+	float: left;
+	
+}
+
+.logoFooter{
+	margin-top:2em;
+	border-collapse: collapse;
+	background-color: lightgray;
+	border-top: 1px solid black;
+	
 }
