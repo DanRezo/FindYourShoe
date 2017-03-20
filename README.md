@@ -16,20 +16,20 @@ A Java web-app developed on eclipse using the Spring Tool Suite which allows use
 2. User can  follow link to Brooks Running for general information on running style.
 3. User can click on a logo of the shoe brands located in the footer to see a list of shoes
 4. Information is displayed on the given brand:
-   -Run Fast neutral shoes made for "everyday runs"
-   -Run Far Neutral shoes made for longer runs, usually more than 12 miles.
-   -Run Stable Stability shoes made to correct over-pronation, the inward roll of the ankles during stress.
-   -Run True Stability shoes made to correct over-pronation during longer runs.
+  -Run Fast neutral shoes made for "everyday runs"
+  -Run Far Neutral shoes made for longer runs, usually more than 12 miles.
+  -Run Stable Stability shoes made to correct over-pronation, the inward roll of the ankles during stress.
+  -Run True Stability shoes made to correct over-pronation during longer runs.
 5. User has the ability to  see CRUD operations in use by:
-   -Removing shoes form list.
-   -Editing a shoe on the list.
-   -Adding a new shoe to the list.
+  -Removing shoes form list.
+  -Editing a shoe on the list.
+  -Adding a new shoe to the list.
 6. User can also click on the drop down menu to filter shoes by
-    1.Category
-      -Neutral
-      -Stability
-    2.Run Style
-      -Run Fast
-      -Run Far
-      -Run Stable
-      -Run True
+ 1.Category
+   -Neutral
+   -Stability
+ 2.Run Style
+   -Run Fast
+   -Run Far
+   -Run Stable
+   -Run True
