@@ -8,8 +8,8 @@ A Java web-app developed on eclipse using the Spring Tool Suite which allows use
 1. [How to Execute](#how-to-execute)
 
 ## How to Execute
-- The web-app is hosted on: insert URL <a href="http://52.43.150.156:8080/PresidentsWeb/">**here**</a>
-- Download the entire program as a .war file <a href="PresidentsWeb.war">**here**</a>
+- The web-app is hosted on: insert URL <a href="http://danrezo.com:8080/ShoeFinderWeb/">**here**</a>
+- Download the entire program as a .war file <a href="ShoeFinderWeb.war">**here**</a>
 
 ## Instructions
 1. User arrives on landing page.
