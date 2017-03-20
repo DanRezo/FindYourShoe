@@ -26,11 +26,11 @@ A Java web-app developed on eclipse using the Spring Tool Suite which allows use
   - Adding a new shoe to the list.
 6. User can also click on the drop down menu to filter shoes by:
 
-  1. Category
-   - Neutral
-   - Stability
-  2. Run Style
-   - Run Fast
-   - Run Far
-   - Run Stable
-   - Run True
+   - Category
+     - Neutral
+     - Stability
+   - Run Style
+     - Run Fast
+     - Run Far
+     - Run Stable
+     - Run True
