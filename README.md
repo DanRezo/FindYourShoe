@@ -3,11 +3,14 @@ A Java web-app developed on eclipse using the Spring Tool Suite which allows use
 
 <p align="center"><img src="src/main/webapp/ShoePics/Screen1.png" height="350">
 <img src="src/main/webapp/ShoePics/Screen2.png" height="350"></p>
+
 ## In This Document
 1. [How to Execute](#how-to-execute)
+
 ## How to Execute
 - The web-app is hosted on: insert URL <a href="http://52.43.150.156:8080/PresidentsWeb/">**here**</a>
 - Download the entire program as a .war file <a href="PresidentsWeb.war">**here**</a>
+
 ## Instructions
 1. User arrives on landing page.
 2. User can  follow link to Brooks Running for general information on running style.
@@ -30,5 +33,3 @@ A Java web-app developed on eclipse using the Spring Tool Suite which allows use
       -Run Far
       -Run Stable
       -Run True
-
-      
