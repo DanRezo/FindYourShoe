@@ -27,7 +27,6 @@ public class ShoeFinderController {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("result");
 		mv.addObject("shoes", shoeDAO.getShoesByName(n));
-
 		return mv;
 	}
 
@@ -36,7 +35,6 @@ public class ShoeFinderController {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("result");
 		mv.addObject("shoes", shoeDAO.getShoesByBrand(b));
-
 		return mv;
 	}
 
@@ -45,7 +43,6 @@ public class ShoeFinderController {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("result");
 		mv.addObject("shoes", shoeDAO.getShoesByType(t));
-
 		return mv;
 	}
 
@@ -53,18 +50,27 @@ public class ShoeFinderController {
 	public ModelAndView getByRun(@RequestParam("run") String r) {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("result");
-		mv.addObject("shoe", shoeDAO.getShoesByRun(r));
-
+		mv.addObject("shoes", shoeDAO.getShoesByRun(r));
 		return mv;
 	}
 
 	@RequestMapping(path = "NewShoe.do", method = RequestMethod.POST)
 	public ModelAndView newShoe(Shoe shoe) {
-		System.out.println("test");
+		shoe.setPicture("default.png");
 		shoeDAO.addNewShoe(shoe);
 		ModelAndView mv = new ModelAndView();
+		mv.addObject("shoes", shoeDAO.getAllShoes());
 		mv.setViewName("result");
+		return mv;
 
+	}
+
+	@RequestMapping(path = "addShoeForm.do", method = RequestMethod.GET)
+	public ModelAndView addShoeForm(@RequestParam("type") String type) {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("addShoe");
+		System.out.println("type: " + type);
+		mv.addObject("type", type);
 		return mv;
 
 	}
@@ -73,8 +79,8 @@ public class ShoeFinderController {
 	public ModelAndView deleteShoe(@RequestParam("name") String name) {
 		ModelAndView mv = new ModelAndView();
 		shoeDAO.deleteShoe(name);
-		mv.setViewName("result");
-
+		mv.addObject("shoe", shoeDAO.getShoesByName(name));
+		mv.setViewName("deleteShoe");
 		return mv;
 	}
 
@@ -83,14 +89,41 @@ public class ShoeFinderController {
 		ModelAndView mv = new ModelAndView();
 		shoeDAO.deleteShoe(brand);
 		mv.setViewName("result");
-
 		return mv;
 	}
-	
+
 	@RequestMapping(path = "EditShoe.do", method = RequestMethod.POST)
-	public ModelAndView editShoe(@RequestParam("shoe") String shoe){
-		ModelAndView mv = new ModelAndView();
+	public ModelAndView editShoe(Shoe shoe) {
 		shoeDAO.editShoe(shoe);
+		ModelAndView mv = new ModelAndView();
 		mv.setViewName("result");
+		mv.addObject("shoes", shoeDAO.getAllShoes());
+		return mv;
+	}
+
+	@RequestMapping(path = "EditShoeForm.do", method = RequestMethod.POST)
+	public ModelAndView editShoeForm(@RequestParam("name") String name) {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("editShoe");
+		mv.addObject("shoe", shoeDAO.getShoesByName(name));
+		return mv;
+	}
+
+	@RequestMapping(path = "TotalShoes.do", method = RequestMethod.POST)
+	public ModelAndView totalShoes(@RequestParam("shoes") String shoes) {
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("shoes", shoeDAO.getAllShoes());
+		mv.setViewName("result");
+		return mv;
+
+	}
+
+	@RequestMapping(path = "returnToResults.do", method = RequestMethod.GET)
+	public ModelAndView returnToResults() {
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("shoes", shoeDAO.getAllShoes());
+		mv.setViewName("result");
+		return mv;
+
 	}
 }

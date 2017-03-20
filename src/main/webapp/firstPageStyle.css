@@ -1,30 +1,26 @@
 
+table.center{
+margin-left: auto;
+margin-right: auto;
+}
+
 #Asics {
-  float: left;
-  margin: 0
-  border-top 1px;
-  border-bottom 1px;
+border-collapse: collapse;
 }
 
 #Brooks{
-  float: left;
-  margin: 0
-  border-top 1px;
-  border-bottom 1px;
-}
-#NB{
-  float: right;
-  margin: 0
-  border-top 1px;
-  border-bottom 1px;
-}
-#Nike{
-  float: right;
-  margin: 0
-  border-top 1px;
-  border-bottom 1px;
+border-collapse: collapse
 }
 
-td{
-  border: 1px;
-  padding:35px;
+#NB{
+border-collapse:collapse;
+}
+
+#Nike{
+border-collapse: collapse;
+}
+#logos{
+margin-left: auto;
+margin-right: auto;
+width: 100%
+}

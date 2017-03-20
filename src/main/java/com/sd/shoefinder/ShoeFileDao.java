@@ -28,11 +28,11 @@ public class ShoeFileDao implements ShoeDAO {
 			String line;
 			while ((line = buf.readLine()) != null) {
 				String[] tokens = line.split("/ ");
-				String brand = tokens[1];
-				String name = tokens[2];
-				String type = tokens[3];
-				String run = tokens[4];
-				String picture = tokens[5];
+				String brand = tokens[0];
+				String name = tokens[1];
+				String type = tokens[2];
+				String run = tokens[3];
+				String picture = tokens[4];
 				shoes.add(new Shoe(brand, name, type, run, picture));
 			}
 		} catch (Exception e) {
@@ -70,6 +70,7 @@ public class ShoeFileDao implements ShoeDAO {
 		List<Shoe> shoeByRun = new ArrayList<>();
 		for (Shoe shoer : shoes) {
 			if (shoer.getRun().equals(run)) {
+				System.out.println(shoer);
 				shoeByRun.add(shoer);
 			}
 
@@ -117,14 +118,23 @@ public class ShoeFileDao implements ShoeDAO {
 			shoes.remove(index);
 		}
 	}
-	
+
 	@Override
-	public List<Shoe> editShoe(){
-	int index = 0;
-	for(Shoe shoeEdit: shoes){
-		if(shoeEdit.getName().equals(name)){
-			shoeEdit.setBrand()
+	public void editShoe(Shoe shoe) {
+		int index = 0;
+		for (Shoe shoeBrand : shoes) {
+			if (shoeBrand.getPicture().equals(shoe.getPicture())) {
+				index = shoes.indexOf(shoeBrand);
+				break;
+
+			}
 		}
+		Shoe s = shoes.get(index);
+		s.setBrand(shoe.getBrand());
+		s.setName(shoe.getName());
+		s.setRun(shoe.getRun());
+		s.setType(shoe.getType());
+		shoes.set(index, s);
 	}
 
 	@Override
@@ -132,4 +142,5 @@ public class ShoeFileDao implements ShoeDAO {
 		List<Shoe> tempShoe = shoes;
 		return tempShoe;
 	}
+
 }

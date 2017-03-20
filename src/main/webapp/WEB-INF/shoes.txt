@@ -1,20 +1,20 @@
-/ Nike/ Pegasus 33/ Neutral/ Run Fast/ Pegasus 33.png
-/ Nike/ Vomero 12/ Neutral/ Run Far/ Vomero 12.png
-/ Nike/ LunarGlide 8/ Stability/ Run Stable/ LunarGlide 8.png
-/ Nike/ Structure 20/ Stability/ Run True/ Structure 20.png
-/ Brooks/ Ghost 9/ Neutral/ Run Fast/ Ghost 9.png
-/ Brooks/ Glycerin 14/ Neutral/ Run Far/ Glycerin 13.png
-/ Brooks/ Adrenaline GTS-17/ Stability/ Run Stable/ Adrenaline GTS-17.png
-/ Brooks/ Beast 16/ Stability/ Run True/ Beast 16.png
-/ New Balance/ 880v7/ Neutral/ Run Fast/ 880v7.png
-/ New Balance/ Fresh Foam 1080v7/ Neutral/ Run Far/ 1080v7.png
-/ New Balance/ 860v7/ Stability/ Run Stable/ 860v7.png
-/ New Balance/ 1260v6/ Stability/ Run True/ 1260v6.png
-/ Asics/ Cumulus 18/ Neutral/ Run Fast/ Cumulus 18.png
-/ Asics/ Nimbus 19/ Neutral/ Run Far/ Nimbus 19.png
-/ Asics/ Gt-2000 5/ Stability/ Run Stable/ Gt-2000 5.png
-/ Asics/ Kayano 23/ Stability/ Run True/ Kayano 23.png
-/ Saucony/ Ride 9/ Neutral/ Run Fast/ Ride 9.png
-/ Saucony/ Triumph ISO 3/ Neutral/ Run Far/ Triumph ISO 3.png
-/ Saucony/ Guide 10/ Stability/ Run Stable/ Guide 10.png
-/ Saucony/ Hurricane ISO 3/ Stability/ Run True/ Hurricane ISO 3.png
+Asics/ Cumulus 18/ Neutral/ Run Fast/ Cumulus 18.png
+Asics/ Nimbus 19/ Neutral/ Run Far/ Nimbus 19.png
+Asics/ Gt-2000 5/ Stability/ Run Stable/ Gt-2000 5.png
+Asics/ Kayano 23/ Stability/ Run True/ Kayano 23.png
+Brooks/ Ghost 9/ Neutral/ Run Fast/ Ghost 9.png
+Brooks/ Glycerin 14/ Neutral/ Run Far/ Glycerin 13.png
+Brooks/ Adrenaline GTS-17/ Stability/ Run Stable/ Adrenaline GTS-17.png
+Brooks/ Beast 16/ Stability/ Run True/ Beast 16.png
+New Balance/ 880v7/ Neutral/ Run Fast/ 880v7.png
+New Balance/ Fresh Foam 1080v7/ Neutral/ Run Far/ 1080v7.png
+New Balance/ 860v7/ Stability/ Run Stable/ 860v7.png
+New Balance/ 1260v6/ Stability/ Run True/ 1260v6.png
+Nike/ Pegasus 33/ Neutral/ Run Fast/ Pegasus 33.png
+Nike/ Vomero 12/ Neutral/ Run Far/ Vomero 12.png
+Nike/ LunarGlide 8/ Stability/ Run Stable/ LunarGlide 8.png
+Nike/ Structure 20/ Stability/ Run True/ Structure 20.png
+Saucony/ Ride 9/ Neutral/ Run Fast/ Ride 9.png
+Saucony/ Triumph ISO 3/ Neutral/ Run Far/ Triumph ISO 3.png
+Saucony/ Guide 10/ Stability/ Run Stable/ Guide 10.png
+Saucony/ Hurricane ISO 3/ Stability/ Run True/ Hurricane ISO 3.png

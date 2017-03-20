@@ -15,7 +15,8 @@ public interface ShoeDAO {
 
 	public void deleteShoe(String name);
 
-	public void removeBrand(Shoe brand);
+	public void removeBrand(Shoe shoe);
+	public void editShoe(Shoe shoe);
 
 
 	public List<Shoe> getAllShoes();
