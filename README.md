@@ -36,6 +36,29 @@ A Java web-app developed on eclipse using the Spring Tool Suite which allows use
      - Run Far
      - Run Stable
      - Run True
+     
+## Example
+```
+@Override
+	public void editShoe(Shoe shoe) {
+		int index = 0;
+		for (Shoe shoeBrand : shoes) {
+			if (shoeBrand.getPicture().equals(shoe.getPicture())) {
+				index = shoes.indexOf(shoeBrand);
+				break;
+
+			}
+		}
+		Shoe s = shoes.get(index);
+		s.setBrand(shoe.getBrand());
+		s.setName(shoe.getName());
+		s.setRun(shoe.getRun());
+		s.setType(shoe.getType());
+		shoes.set(index, s);
+	}
+  ```
+  #### Breakdown
+In order to edit the shoe I dade to search for shoes based on the brand first. The ForEach loop was used to iterate over all the shoes and I used the int variable index as a placeholder. Once the shoe was found the properties of the shoe can be changed and the index[0] is set with the new information sent.
 
 ## Reflection
-This was the first full crud project due. 
+This was the first full crud project I completed. This simple CRUD application built with Java, Spring MVC, HTML and CSS helped reinforce the lesson thought during week 7. Looking back at the code I can see that poor naming was used while coming up with the logic which makes it difficult to really tell what the code is doing. Also, I could have initially sorted the shoes a different way than with the logo picture. If you click on logo, only the shoes particular to that brand will show up. This is why I decided to be able to edit shoes based on the images matching. 
