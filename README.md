@@ -1,4 +1,4 @@
-#Summary
+# Summary
 A Java web-app developed on eclipse using the Spring Tool Suite which allows users to utilize CRUD operations on a shoe list.
 
 <p align="center"><img src="src/main/webapp/ShoePics/Screen1.png" height="350">
@@ -10,6 +10,8 @@ A Java web-app developed on eclipse using the Spring Tool Suite which allows use
 ## How to Execute
 - The web-app is hosted on: insert URL <a href="http://danrezo.com:8080/ShoeFinderWeb/">**here**</a>
 - Download the entire program as a .war file <a href="ShoeFinderWeb.war">**here**</a>
+
+## Stories
 
 ## Instructions
 1. User arrives on landing page.
@@ -34,3 +36,6 @@ A Java web-app developed on eclipse using the Spring Tool Suite which allows use
      - Run Far
      - Run Stable
      - Run True
+
+## Reflection
+This was the first full crud project due. 
